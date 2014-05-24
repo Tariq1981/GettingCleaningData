@@ -3,6 +3,7 @@
 The Github repo contains only one R script (run_analysis.R).
 **Assumptions:**
 ----
+ - The script assumes that the data is downloaded manually and unzipped. The script should be placed in the folder as the data itself.
  - Variable names in the submitted tidy dataset follows the Camel naming scheme.  This is due to long variable names.
  - The script should be placed in the folder that contains the train, test and the rest of data files.
  - setwd() should used to set the working directory to be the same folder that contains the data and the run_analysis.R.
