@@ -10,13 +10,14 @@ The Github repo contains only one R script (run_analysis.R).
 **Script Flow:**
 ----
  1. Read activity_labels.csv, features.txt, X_train.txt, X_test.txt, y_train.txt, y_test.txt, subject_train.txt and subject_test.txt
- 2. replace the activity id by the actual activity name for the training and the testing data.
- 3. Append the SubjectId column to the training dataset and the same for the testing dataset.
- 4. Append the ActivityLevel column to the training dataset and the same for the testing dataset.
- 5. Append a DataType column which differentiate train dataset from testing dataset.
- 6. Merge the training dataset and the testing dataset called "all.data".
- 7. Create subset dataset from the dataset ,which is created in the previous step, that contains SubjectId,ActivityLevel and any column contains mean or standard deviation measure. I assumed that any column cotains "-mean" will hold mean measure. If it contains "-std" will hold standard deviation measure.
- 8. Create "Avg.Data" dataset which contains the mean for each variable extracted in the previous step per SubjectId per ActivityLevel. This dataset contains 180 rows (30 subjects * 6 Activity Levels). Some values will be NaN as the some subjects have no measures for a particular activity levels in the original dataset.
+ 2. Give names for the features in the datasets which are created from the X_train.txt and X_test.txt. The names are obtained from features.txt.
+ 3. Replace the activity id by the actual activity name for the training and the testing data.
+ 4. Append the SubjectId column to the training dataset and the same for the testing dataset.
+ 5. Append the ActivityLevel column to the training dataset and the same for the testing dataset.
+ 6. Append a DataType column which differentiate train dataset from testing dataset.
+ 7. Merge the training dataset and the testing dataset called "all.data".
+ 8. Create subset dataset from the dataset ,which is created in the previous step, that contains SubjectId,ActivityLevel and any column contains mean or standard deviation measure. I assumed that any column cotains "-mean" will hold mean measure. If it contains "-std" will hold standard deviation measure.
+ 9. Create "Avg.Data" dataset which contains the mean for each variable extracted in the previous step per SubjectId per ActivityLevel. This dataset contains 180 rows (30 subjects * 6 Activity Levels). Some values will be NaN as the some subjects have no measures for a particular activity levels in the original dataset.
 
 **Tidy Dataset Variables:**
 ---
