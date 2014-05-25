@@ -1,6 +1,6 @@
 **Script Design**
 ===========
-The Github repo contains only one R script (run_analysis.R).
+The Github repo contains only one R script (run_analysis.R) and readme file. The readme file contains the flow of the script and the codebook for the Tidy dataset which is attached in the course project.
 **Assumptions:**
 ----
  - The script assumes that the data is downloaded manually and unzipped. The script should be placed in the folder as the data itself.
@@ -22,7 +22,7 @@ The Github repo contains only one R script (run_analysis.R).
 
 **Tidy Dataset Variables:**
 ---
-All the variables except the first two are calculated as the Mean for its counterpart in the original dataset per subject per activity level
+All the variables except the first two are calculated as the Mean for its counterpart in the original dataset per subject per activity level. The meaning of each variable explaioned in the readme.txt file which is located in the original dataset.
  1. SubjectId: Subject Id. The values are from integers from 1 to 30.
  2. ActivityLevel: Name of the activity which the measures calculated for. The values are the same as the names exist in the activity_labels.txt in the original dataset.
  3. MeanTimeDomainBodyAccelerometerMeanX: Mean for the "tBodyAcc-mean()-X" variable, which is in the original dataset.
